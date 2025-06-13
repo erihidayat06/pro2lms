@@ -6,9 +6,11 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="<?php echo e(csrf_token()); ?>" name="csrf-token">
     <title><?php echo e($title ?? config('APP_NAME')); ?> | <?php echo e(env('APP_NAME')); ?></title>
+
     <!-- Fonts -->
     <link href="https://fonts.bunny.net" rel="preconnect">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
     <!-- PWA  -->
     <meta content="#6777ef" name="theme-color" />
     <link href="<?php echo e(asset('logo.png')); ?>" rel="apple-touch-icon">
@@ -16,16 +18,14 @@
 
     <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
 
-
     <?php echo \Filament\Support\Facades\FilamentAsset::renderStyles() ?>
     <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
-
-
 </head>
 
 <body class="font-sans antialiased konten-mahasiswa">
     <?php echo $__env->make('components.dynamic-mahasiswa-style', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900 oke">
         <main>
             <?php
 $__split = function ($name, $params = []) {
@@ -64,23 +64,23 @@ if (isset($__slots)) unset($__slots);
         </main>
     </div>
 
-
     <?php echo \Filament\Support\Facades\FilamentAsset::renderScripts() ?>
     <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::scripts(); ?>
 
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
     <script>
         Livewire.onError((error, component) => {
             console.error('Livewire error:', error);
             return false;
         });
     </script>
+
     <?php echo $__env->yieldPushContent('scripts'); ?>
-    
+
     <script>
         if ("serviceWorker" in navigator) {
-            // Register a service worker hosted at the root of the
-            // site using the default scope.
             navigator.serviceWorker.register("/sw.js").then(
                 (registration) => {
                     console.log("Service worker registration succeeded:", registration);
@@ -93,25 +93,27 @@ if (isset($__slots)) unset($__slots);
             console.error("Service workers are not supported.");
         }
     </script>
+
     <script>
         self.addEventListener("push", (event) => {
-            console.log(event);
             let response = event.data && event.data.text();
-            let title = JSON.parse(response).notification.title;
-            let body = JSON.parse(response).notification.body;
-            let icon = JSON.parse(response).notification.image;
-            let image = JSON.parse(response).notification.image;
+            let data = JSON.parse(response);
+            let {
+                title,
+                body,
+                image
+            } = data.notification;
 
             event.waitUntil(
                 self.registration.showNotification(title, {
                     body,
-                    icon,
+                    icon: image,
                     image,
                     data: {
-                        url: JSON.parse(response).data.url
+                        url: data.data.url
                     }
                 })
-            )
+            );
         });
 
         self.addEventListener('notificationclick', function(event) {
@@ -122,10 +124,9 @@ if (isset($__slots)) unset($__slots);
         });
     </script>
 
-
     <script>
         setInterval(() => {
-            fetch('/csrf-token') // route kecil yang mengembalikan token terbaru
+            fetch('/csrf-token')
                 .then(res => res.text())
                 .then(token => {
                     document.querySelector('meta[name="csrf-token"]').setAttribute('content', token);
@@ -133,12 +134,30 @@ if (isset($__slots)) unset($__slots);
                         c.__instance.canonical = token;
                     });
                 });
-        }, 5 * 60 * 1000); // setiap 5 menit
+        }, 5 * 60 * 1000);
     </script>
-</body>
 
-</html>
+    <!-- FIX AGAR CLASS BODY TIDAK HILANG -->
+    <script>
+        const ensureBodyClass = () => {
+            const classList = document.body.classList;
+            if (!classList.contains('konten-mahasiswa')) {
+                classList.add('konten-mahasiswa');
+                console.log('✅ class konten-mahasiswa ditambahkan kembali ke <body>');
+            }
+        };
 
+        ensureBodyClass();
+
+        const observer = new MutationObserver(() => {
+            ensureBodyClass();
+        });
+
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+    </script>
 </body>
 
 </html>
