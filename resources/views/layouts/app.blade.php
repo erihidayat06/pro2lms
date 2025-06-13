@@ -24,7 +24,7 @@
 <body class="font-sans antialiased konten-mahasiswa">
     @include('components.dynamic-mahasiswa-style')
 
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900 oke">
         <main>
             @livewire('notifications')
             @livewire('database-notifications')
