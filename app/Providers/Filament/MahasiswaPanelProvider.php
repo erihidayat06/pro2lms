@@ -42,27 +42,8 @@ class MahasiswaPanelProvider extends PanelProvider
 
         FilamentView::registerRenderHook(
             'panels::body.start',
-            function () use ($setting) {
-                return <<<HTML
-                    <script>
-                        const ensureClass = () => {
-                            if (!document.body.classList.contains("konten-mahasiswa")) {
-                                document.body.classList.add("konten-mahasiswa");
-                            }
-                        };
-                        ensureClass();
-                        const observer = new MutationObserver(ensureClass);
-                        observer.observe(document.body, {
-                            attributes: true,
-                            attributeFilter: ['class']
-                        });
-                    </script>
-                HTML
-                    . view('components.dynamic-mahasiswa-style', ['setting' => $setting])->render(); // <- perhatikan 'render()'
-            }
+            fn() => view('components.dynamic-mahasiswa-style', ['setting' => $setting])
         );
-
-
 
         return $panel
             ->id('mahasiswas')
