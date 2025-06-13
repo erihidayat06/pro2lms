@@ -23,14 +23,14 @@
 </head>
 
 <body class="font-sans antialiased konten-mahasiswa">
-    @include('components.dynamic-mahasiswa-style')
+    {{-- @include('components.dynamic-mahasiswa-style')
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         <main>
             @livewire('notifications')
             @livewire('database-notifications')
             {{ $slot }}
         </main>
-    </div>
+    </div> --}}
 
 
     @filamentScripts
