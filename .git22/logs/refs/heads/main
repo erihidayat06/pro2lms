@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 52c94b8440b92d5720a8af6ef7c384b2820b2302 erihidayat06 <erihidayat549@gmail.com> 1749113255 +0700	clone: from https://github.com/firsadev/pro2lms.git
+52c94b8440b92d5720a8af6ef7c384b2820b2302 b3457d2519415d23c409ab03ed68bc81910d1182 erihidayat06 <erihidayat549@gmail.com> 1749113857 +0700	commit: Munculkan tombol jawaban, stting tampilan
+b3457d2519415d23c409ab03ed68bc81910d1182 200c6ac08fa096df37b3239985ff10c3697cdb2e erihidayat06 <erihidayat549@gmail.com> 1749115662 +0700	commit: tambah view
+200c6ac08fa096df37b3239985ff10c3697cdb2e 301d086a4918a4b480aebf1939791230ead853d9 erihidayat06 <erihidayat549@gmail.com> 1749225360 +0700	commit: Rubah tampilan mahasiswa
+301d086a4918a4b480aebf1939791230ead853d9 e4d6811b2d53fc31ebd5ed9ec8da8607d570ee0e erihidayat06 <erihidayat549@gmail.com> 1749268542 +0700	commit: Menambah route
+e4d6811b2d53fc31ebd5ed9ec8da8607d570ee0e ad76694780d3ae171af3606c463f051cd737c068 erihidayat06 <erihidayat549@gmail.com> 1749295771 +0700	commit: Merubah sub navbar
+ad76694780d3ae171af3606c463f051cd737c068 6ee83c065b53515aa738b0f239aa5f1078d3674a erihidayat06 <erihidayat549@gmail.com> 1749296088 +0700	commit: Merubah sub navbar
+6ee83c065b53515aa738b0f239aa5f1078d3674a 96027a0eca2aca1d01f3026990b7ca48469d6f26 erihidayat06 <erihidayat549@gmail.com> 1749300490 +0700	commit: menangani liveware
+96027a0eca2aca1d01f3026990b7ca48469d6f26 a031d26745e9b0001dbd6f788cb61498de9be6a9 erihidayat06 <erihidayat549@gmail.com> 1749303892 +0700	commit: tambahkan time
+a031d26745e9b0001dbd6f788cb61498de9be6a9 b0224e960f2e90ea0b2fef8b2ef561d552462b71 erihidayat06 <erihidayat549@gmail.com> 1749304536 +0700	commit: tambahkan time
+b0224e960f2e90ea0b2fef8b2ef561d552462b71 23dff71637eff89a4b6b41aca130946e860c3bdd erihidayat06 <erihidayat549@gmail.com> 1749304656 +0700	commit: tambahkan time
+23dff71637eff89a4b6b41aca130946e860c3bdd f29ff9b57ea9a2f6158878e57db7c8658dddc31b erihidayat06 <erihidayat549@gmail.com> 1749306009 +0700	commit: tambahkan time
+f29ff9b57ea9a2f6158878e57db7c8658dddc31b 26109e2bceaa476d4465c2354f4ec2f65b447245 erihidayat06 <erihidayat549@gmail.com> 1749384985 +0700	commit: tambahkan time
+26109e2bceaa476d4465c2354f4ec2f65b447245 72e34ac8d222fb4f83c01630bbefade175baa13a erihidayat06 <erihidayat549@gmail.com> 1749388141 +0700	commit: Tambah font dan Ukuran font
+72e34ac8d222fb4f83c01630bbefade175baa13a 5a7a1c1b6c6d8952c5201ce8cede432d866f0db3 erihidayat06 <erihidayat549@gmail.com> 1749388341 +0700	commit: Merubah ukuran font
+5a7a1c1b6c6d8952c5201ce8cede432d866f0db3 8ba62cbdbb8f1671cc7165b35aa3425577701f3d erihidayat06 <erihidayat549@gmail.com> 1749389826 +0700	commit: Tidak merubah color font
+8ba62cbdbb8f1671cc7165b35aa3425577701f3d 5b9eaa65dc15c76a2ae2bbd3eadf2085887e510e erihidayat06 <erihidayat549@gmail.com> 1749391164 +0700	commit: Merubah collor btn
+5b9eaa65dc15c76a2ae2bbd3eadf2085887e510e 016c8699d7b3170f8d6d82e5c47da28cc76c3ab6 erihidayat06 <erihidayat549@gmail.com> 1749397572 +0700	commit: Ganti color
+016c8699d7b3170f8d6d82e5c47da28cc76c3ab6 ac31cbc6e36f04253c5069b5e26449674ba58922 erihidayat06 <erihidayat549@gmail.com> 1749704561 +0700	commit: chat dosen
+ac31cbc6e36f04253c5069b5e26449674ba58922 85a6ec919d90ee961049c3b9be777b67dfa724bc erihidayat06 <erihidayat549@gmail.com> 1749704579 +0700	pull: Merge made by the 'ort' strategy.
+85a6ec919d90ee961049c3b9be777b67dfa724bc 1317f11c12698fec1ce76c4dac72a5df01a46e20 erihidayat06 <erihidayat549@gmail.com> 1749705088 +0700	commit: hilangkan view
+1317f11c12698fec1ce76c4dac72a5df01a46e20 8b0add417e9ff36ce181f037ac62a93a5b5bfa84 erihidayat06 <erihidayat549@gmail.com> 1749705601 +0700	commit: merubah chat
+8b0add417e9ff36ce181f037ac62a93a5b5bfa84 a8905a8fbdb7629bacc3924bacdd8e1aea60a811 erihidayat06 <erihidayat549@gmail.com> 1749705658 +0700	commit: merubah chat
+a8905a8fbdb7629bacc3924bacdd8e1aea60a811 00de8d699e219aca6e4cf7a2edf17fed445a1a28 erihidayat06 <erihidayat549@gmail.com> 1749705837 +0700	commit: merubah chat
+00de8d699e219aca6e4cf7a2edf17fed445a1a28 61555f71b66beb41f602962383007d8761ea1cae erihidayat06 <erihidayat549@gmail.com> 1749706010 +0700	commit: merubah chat
